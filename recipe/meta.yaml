@@ -10,7 +10,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
@@ -32,6 +32,8 @@ requirements:
 test:
   imports:
     - stglib
+  commands:
+    -  runaqdhdr2cdf.py --help
 
 about:
   home: http://github.com/dnowacki-usgs/stglib
