@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/dnowacki-usgs/stglib/archive/v{{ version }}.tar.gz
-  sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+  sha256: 45cb863b1d4639e27fd69a53077727665bfc88d9a1d8838960b8a1c3e1042976
 
 build:
   noarch: python
