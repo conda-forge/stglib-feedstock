@@ -1,4 +1,4 @@
-{% set version = "0.2.1" %}
+{% set version = "0.2.2" %}
 
 package:
   name: stglib
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/dnowacki-usgs/stglib/archive/v{{ version }}.tar.gz
-  sha256: 45cb863b1d4639e27fd69a53077727665bfc88d9a1d8838960b8a1c3e1042976
+  sha256: 4246579ac96dee6f1e5fb47822ed2ccd4cf42f15e099c9bd0556a97f2064af67
 
 build:
   noarch: python
