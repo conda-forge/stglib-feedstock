@@ -1,4 +1,4 @@
-{% set version = "0.2.2" %}
+{% set version = "0.3.0" %}
 
 package:
   name: stglib
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://github.com/dnowacki-usgs/stglib/archive/v{{ version }}.tar.gz
-  sha256: 4246579ac96dee6f1e5fb47822ed2ccd4cf42f15e099c9bd0556a97f2064af67
+  sha256: 3c20bb5582e769ef1d6950c156b4a1446c47fa0c117e17f2a8610e6970db4828
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -40,7 +40,7 @@ about:
   license: CC0
   license_file: LICENSE.md
   license_family: CC
-  summary: 'Process data from a variety of oceanographic instrumentation'
+  summary: Process data from a variety of oceanographic instrumentation
   description: |
     This package contains code to process data from a variety of oceanographic
     instrumentation, consistent with the procedures of the Sediment Transport
