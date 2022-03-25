@@ -11,7 +11,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -42,7 +42,7 @@ about:
   license: CC0
   license_file: LICENSE.md
   license_family: CC
-  summary: 'Process data from a variety of oceanographic instrumentation'
+  summary: Process data from a variety of oceanographic instrumentation
   description: |
     This package contains code to process data from a variety of oceanographic
     instrumentation, consistent with the procedures of the USGS Coastal/Marine
