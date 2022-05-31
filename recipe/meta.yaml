@@ -1,4 +1,4 @@
-{% set version = "0.3.0" %}
+{% set version = "0.4.0" %}
 
 package:
   name: stglib
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/dnowacki-usgs/stglib/archive/v{{ version }}.tar.gz
-  sha256: 3c20bb5582e769ef1d6950c156b4a1446c47fa0c117e17f2a8610e6970db4828
+  sha256: a755d6732b0dc9c1c00ca8918d817c8d567c344e8697f558e5d68ca70343a9df
 
 build:
   noarch: python
@@ -15,19 +15,21 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
   run:
-    - python >=3.6
+    - python >=3.7
     - compliance-checker
     - matplotlib-base
     - netcdf4
     - numpy
     - pandas
+    - pre-commit
     - pytest
     - pyyaml
     - scipy
     - sqlite
+    - tqdm
     - xarray
     - xmltodict
 
