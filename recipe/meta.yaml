@@ -1,12 +1,12 @@
-{% set version = "0.5.0" %}
+{% set version = "0.6.0" %}
 
 package:
   name: stglib
   version: {{ version }}
 
 source:
-  url: https://github.com/dnowacki-usgs/stglib/archive/v{{ version }}.tar.gz
-  sha256: 253e952fafa980fa2d94dabf2b3948c7e4f402e304a43f9da9cd8367a4bee881
+  url: https://github.com/USGS-CMG/stglib/archive/v{{ version }}.tar.gz
+  sha256: df4cea816ce6bd8d4cf63e5985f8bbccbb25d773127349f21a899432e880b31c
 
 build:
   noarch: python
@@ -15,10 +15,10 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
     - pip
   run:
-    - python >=3.7
+    - python >=3.8
     - compliance-checker
     - git-lfs
     - matplotlib-base
