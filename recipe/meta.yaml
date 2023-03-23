@@ -1,4 +1,4 @@
-{% set version = "0.6.0" %}
+{% set version = "0.7.0" %}
 
 package:
   name: stglib
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/USGS-CMG/stglib/archive/v{{ version }}.tar.gz
-  sha256: df4cea816ce6bd8d4cf63e5985f8bbccbb25d773127349f21a899432e880b31c
+  sha256: d7cb2281edb552708c3853bbeed2fd7dec8ece5c84cdd8bc73833d54824bc4e8
 
 build:
   noarch: python
@@ -44,7 +44,7 @@ test:
 
 about:
   home: http://github.com/USGS-CMG/stglib
-  license: CC0
+  license: CC-PDDC
   license_file: LICENSE.md
   license_family: CC
   summary: Process data from a variety of oceanographic instrumentation

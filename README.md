@@ -1,11 +1,11 @@
-About stglib
-============
+About stglib-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/stglib-feedstock/blob/main/LICENSE.txt)
 
 Home: http://github.com/USGS-CMG/stglib
 
-Package license: CC0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/stglib-feedstock/blob/main/LICENSE.txt)
+Package license: CC-PDDC
 
 Summary: Process data from a variety of oceanographic instrumentation
 
