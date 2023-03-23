@@ -44,7 +44,9 @@ test:
 
 about:
   home: http://github.com/USGS-CMG/stglib
+  license: CC-PDDC
   license_file: LICENSE.md
+  license_family: CC
   summary: Process data from a variety of oceanographic instrumentation
   description: |
     This package contains code to process data from a variety of oceanographic
