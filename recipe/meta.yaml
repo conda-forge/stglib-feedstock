@@ -10,7 +10,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -20,6 +20,7 @@ requirements:
   run:
     - python >=3.8
     - compliance-checker
+    - dolfyn
     - git-lfs
     - matplotlib-base
     - netcdf4
