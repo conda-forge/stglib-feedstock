@@ -6,11 +6,11 @@ package:
 
 source:
   url: https://github.com/USGS-CMG/stglib/archive/v{{ version }}.tar.gz
-  sha256: 96ffc4877dee51e25ad0f873a198b6df1c7ac83930bb2e337520c8a506aba1ce
+  sha256: a789acb85a3eaa08b85f7e55b8e5309fa77771ebfbc549ffd471d627efa5b837
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
