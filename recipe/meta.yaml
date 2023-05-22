@@ -10,8 +10,11 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
+  entry_points:
+    - runsigmat2cdf = stglib.core.cmd:runsigmat2cdf
+    - runsigcdf2nc = stglib.core.cmd:runsigcdf2nc
 
 requirements:
   host:
