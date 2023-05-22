@@ -6,11 +6,11 @@ package:
 
 source:
   url: https://github.com/USGS-CMG/stglib/archive/v{{ version }}.tar.gz
-  sha256: 248830238dad1a9b79d5d808f7ca55dd964635c80e85c6f0cd69139bed5e4ad8
+  sha256: 4500f2f410ba8a7f526e86c9994d4254513972ff3f5633fe696f755de77ebbd6
 
 build:
   noarch: python
-  number: 1
+  number: 2
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - runsigmat2cdf = stglib.core.cmd:runsigmat2cdf
