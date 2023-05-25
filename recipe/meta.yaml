@@ -1,4 +1,4 @@
-{% set version = "0.9.4" %}
+{% set version = "0.9.5" %}
 
 package:
   name: stglib
@@ -6,15 +6,17 @@ package:
 
 source:
   url: https://github.com/USGS-CMG/stglib/archive/v{{ version }}.tar.gz
-  sha256: 4500f2f410ba8a7f526e86c9994d4254513972ff3f5633fe696f755de77ebbd6
+  sha256: 997d218fd0314b6ae5499e47fe7a0db629f1955474550566c2ccc29295bf23ea
 
 build:
   noarch: python
-  number: 2
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
-    - runsigmat2cdf = stglib.core.cmd:runsigmat2cdf
-    - runsigcdf2nc = stglib.core.cmd:runsigcdf2nc
+    - runsigmat2cdf.py=stglib.core.runcmd:runsigmat2cdf
+    - runsigcdf2nc.py=stglib.core.runcmd:runsigcdf2nc
+    - runvecdat2cdf.py=stglib.core.runcmd:runvecdat2cdf
+    - runveccdf2nc.py=stglib.core.runcmd:runveccdf2nc
 
 requirements:
   host:
