@@ -1,4 +1,4 @@
-{% set version = "0.9.5" %}
+{% set version = "0.9.6" %}
 
 package:
   name: stglib
@@ -13,10 +13,38 @@ build:
   number: 0
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
-    - runsigmat2cdf.py=stglib.core.runcmd:runsigmat2cdf
-    - runsigcdf2nc.py=stglib.core.runcmd:runsigcdf2nc
+    - runaqdhdr2cdf.py=stglib.core.runcmd:runaqdhdr2cdf
+    - runaqdcdf2nc.py=stglib.core.runcmd:runaqdcdf2nc
+    - runaqdhrhdr2cdf.py=stglib.core.runcmd:runaqdhrhdr2cdf
+    - runaqdhrcdf2nc.py=stglib.core.runcmd:runaqdhrcdf2nc
+    - runhwlbcsv2cdf.py=stglib.core.runcmd:runhwlbcsv2cdf
+    - runhwlbcdf2nc.py=stglib.core.runcmd:runhwlbcdf2nc
+    - runiqmat2cdf.py=stglib.core.runcmd:runiqmat2cdf
+    - runiqcdf2nc.py=stglib.core.runcmd:runiqcdf2nc
+    - runrskrsk2cdf.py=stglib.core.runcmd:runrskrsk2cdf
+    - runrskcsv2cdf.py=stglib.core.runcmd:runrskcsv2cdf
+    - runrskcdf2nc.py=stglib.core.runcmd:runrskcdf2nc
+    - runrsknc2waves.py=stglib.core.runcmd:runrsknc2waves
+    - runrsknc2diwasp.py=stglib.core.runcmd:runrsknc2diwas
+    - runecocsv2cdf.py=stglib.core.runcmd:runecocsv2cdf
+    - runecocdf2nc.py=stglib.core.runcmd:runecocdf2nc
+    - runexocsv2cdf.py=stglib.core.runcmd:runexocsv2cdf
+    - runexocdf2nc.py=stglib.core.runcmd:runexocdf2nc
+    - runtrollcsv2cdf.py=stglib.core.runcmd:runtrollcsv2cdf
+    - runtrollcdf2nc.py=stglib.core.runcmd:runtrollcdf2nc
+    - runwvswad2cdf.py=stglib.core.runcmd:runwvswad2cdf
+    - runwvscdf2nc.py=stglib.core.runcmd:runwvscdf2nc
+    - runwvsnc2diwasp.py=stglib.core.runcmd:runwvsnc2diwas
+    - runwvsnc2waves.py=stglib.core.runcmd:runwvsnc2waves
+    - runwxtcsv2cdf.py=stglib.core.runcmd:runwxtcsv2cdf
+    - runwxtcdf2nc.py=stglib.core.runcmd:runwxtcdf2nc
+    - runeofelog2cdf.py=stglib.core.runcmd:runeofelog2cdf
+    - runeofecdf2nc.py=stglib.core.runcmd:runeofecdf2nc
     - runvecdat2cdf.py=stglib.core.runcmd:runvecdat2cdf
     - runveccdf2nc.py=stglib.core.runcmd:runveccdf2nc
+    - runsigmat2cdf.py=stglib.core.runcmd:runsigmat2cdf
+    - runsigraw2cdf.py=stglib.core.runcmd:runsigraw2cdf
+    - runsigcdf2nc.py=stglib.core.runcmd:runsigcdf2nc
 
 requirements:
   host:
