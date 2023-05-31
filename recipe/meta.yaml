@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/USGS-CMG/stglib/archive/v{{ version }}.tar.gz
-  sha256: 997d218fd0314b6ae5499e47fe7a0db629f1955474550566c2ccc29295bf23ea
+  sha256: c53da4939a7f7a15bb009b6c95f6117c8758b613b2d58cd795e57b49b7d63c80
 
 build:
   noarch: python
