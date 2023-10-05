@@ -1,4 +1,4 @@
-{% set version = "0.9.8" %}
+{% set version = "0.10.0" %}
 
 package:
   name: stglib
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/USGS-CMG/stglib/archive/v{{ version }}.tar.gz
-  sha256: 76c21ab9b0d210869415c73318cce87037160b3b863023e2f849bb34bbdb8306
+  sha256: ef8692ac97245a2e2e72bfea92182172b3bbe5244ec5309ee1e8e8a0a32fedef
 
 build:
   noarch: python
@@ -45,6 +45,8 @@ build:
     - runsigmat2cdf.py=stglib.core.runcmd:runsigmat2cdf
     - runsigraw2cdf.py=stglib.core.runcmd:runsigraw2cdf
     - runsigcdf2nc.py=stglib.core.runcmd:runsigcdf2nc
+    - runlisstcsv2cdf.py=stglib.core.runcmd:runlisstcsv2cdf
+    - runlisstcdf2nc.py=stglib.core.runcmd:runlisstcdf2nc
 
 requirements:
   host:
