@@ -1,4 +1,4 @@
-{% set version = "0.14.0" %}
+{% set version = "0.15.0" %}
 
 package:
   name: stglib
@@ -6,11 +6,11 @@ package:
 
 source:
   url: https://github.com/USGS-CMG/stglib/archive/v{{ version }}.tar.gz
-  sha256: 56d777bdd2968fdb056307c4a26c8465434ecc27e43987fa0f45f4a852397585
+  sha256: 6386cd488ec2238e2fc19fba043084fe2efc6514bb7ac54addf00278f7d4cbe3
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - runaqdhdr2cdf.py=stglib.core.runcmd:runaqdhdr2cdf
