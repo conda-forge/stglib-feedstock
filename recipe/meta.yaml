@@ -59,7 +59,6 @@ requirements:
     - python >=3.8
     - compliance-checker
     - dask
-    - dolfyn
     - git-lfs
     - joblib
     - matplotlib-base
