@@ -1,4 +1,4 @@
-{% set version = "0.18.0" %}
+{% set version = "0.19.1" %}
 
 package:
   name: stglib
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/USGS-CMG/stglib/archive/v{{ version }}.tar.gz
-  sha256: e1f443d9bf2fbda492eede8d2a7a3df3cc7971a1f3634d3c669b4d8116f112d8
+  sha256: 2ccd2ce17cb33b48ca8a1811d448968414ba9604c51291e0c251fd71d8dc7003
 
 build:
   noarch: python
@@ -59,7 +59,6 @@ requirements:
     - python >=3.8
     - compliance-checker
     - dask
-    - dolfyn
     - git-lfs
     - joblib
     - matplotlib-base
