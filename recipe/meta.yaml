@@ -1,4 +1,4 @@
-{% set version = "0.20.0" %}
+{% set version = "0.21.0" %}
 
 package:
   name: stglib
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/USGS-CMG/stglib/archive/v{{ version }}.tar.gz
-  sha256: bd914dfb5304234809b3595fe47d00ee11bc875c5d3372bb7d31596dd1c408e1
+  sha256: 097e5e525c6208a1906725695308fb08c6e0eb980fa84553b340a0436ffdc554
 
 build:
   noarch: python
