@@ -1,4 +1,6 @@
-{% set version = "0.22.0" %}
+{% set version = "0.23.0" %}
+{% set python_min = "3.9" %}
+{% set python_max = "3.13" %}
 
 package:
   name: stglib
@@ -6,7 +8,7 @@ package:
 
 source:
   url: https://github.com/USGS-CMG/stglib/archive/v{{ version }}.tar.gz
-  sha256: ddbe63f9df2d9e5388df6cca19f090bc899316831759048015fd0eea10c33572
+  sha256: f8f50b2128fcb40e8aaf005560a0b7898ff877ff9758adc12c36b908bfbb27ee
 
 build:
   noarch: python
@@ -50,17 +52,21 @@ build:
     - runlisstcdf2nc.py=stglib.core.runcmd:runlisstcdf2nc
     - runtcmcsv2cdf.py=stglib.core.runcmd:runtcmcsv2cdf
     - runtcmcdf2nc.py=stglib.core.runcmd:runtcmcdf2nc
+    - runmcasc2cdf.py=stglib.core.runcmd:runmcasc2cdf
+    - runmccdf2nc.py=stglib.core.runcmd:runmccdf2nc
+    - runots.py=stglib.core.runcmd:runots
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
-    - python >=3.8
+    - python >={{ python_min }},<{{ python_max }}
     - compliance-checker
     - dask
     - git-lfs
+    - gsw
     - joblib
     - matplotlib-base
     - netcdf4
@@ -71,13 +77,14 @@ requirements:
     - pytest
     - pyyaml
     - scipy
-    - seawater
     - sqlite
     - tqdm
     - xarray
     - xmltodict
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - stglib
   commands:
