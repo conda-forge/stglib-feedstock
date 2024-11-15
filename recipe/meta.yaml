@@ -1,4 +1,6 @@
 {% set version = "0.23.0" %}
+{% set python_min = "3.9" %}
+{% set python_max = "3.13" %}
 
 package:
   name: stglib
@@ -50,17 +52,21 @@ build:
     - runlisstcdf2nc.py=stglib.core.runcmd:runlisstcdf2nc
     - runtcmcsv2cdf.py=stglib.core.runcmd:runtcmcsv2cdf
     - runtcmcdf2nc.py=stglib.core.runcmd:runtcmcdf2nc
+    - runmcasc2cdf.py=stglib.core.runcmd:runmcasc2cdf
+    - runmccdf2nc.py=stglib.core.runcmd:runmccdf2nc
+    - runots.py=stglib.core.runcmd:runots
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
-    - python >=3.8
+    - python >={{ python_min }},<{{ python_max }}
     - compliance-checker
     - dask
     - git-lfs
+    - gsw
     - joblib
     - matplotlib-base
     - netcdf4
@@ -71,13 +77,14 @@ requirements:
     - pytest
     - pyyaml
     - scipy
-    - seawater
     - sqlite
     - tqdm
     - xarray
     - xmltodict
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - stglib
   commands:
