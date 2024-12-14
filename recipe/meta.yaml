@@ -7,9 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  # url: https://github.com/USGS-CMG/stglib/archive/v{{ version }}.tar.gz
-  url: https://github.com/USGS-CMG/stglib/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 700bbfe5c71d185e45c52f88f3e69e81c347e5fce5087bd44119af52a4d7ceee
+  url: https://github.com/USGS-CMG/stglib/archive/v{{ version }}.tar.gz
+  sha256: 9b0f88b0fb320ba83678b8fa37bd4cc1f8eb660a17543e45575f428a83577917
 
 build:
   noarch: python
