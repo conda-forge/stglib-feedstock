@@ -1,4 +1,4 @@
-{% set version = "1.7.1" %}
+{% set version = "1.8.0" %}
 {% set python_min = "3.10" %}
 {% set python_max = "3.13" %}
 
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/USGS-CMG/stglib/archive/v{{ version }}.tar.gz
-  sha256: 3d249d9a39044a587184936d34118e47f0ec69810e14eee27683707b34d160ec
+  sha256: 00eb5d63f3a774e8aaa54e051bc29ca076f3b919908caf354974b4d3998566cc
 
 build:
   noarch: python
@@ -91,7 +91,7 @@ test:
     - runaqdhdr2cdf.py --help
 
 about:
-  home: http://github.com/USGS-CMG/stglib
+  home: https://code.usgs.gov/cmgp/stglib
   license: CC-PDDC
   license_file: LICENSE.md
   license_family: CC
@@ -100,8 +100,8 @@ about:
     This package contains code to process data from a variety of oceanographic
     instrumentation, consistent with the procedures of the USGS Coastal/Marine
     Hazards and Resources Program (formerly Coastal and Marine Geology Program).
-  doc_url: http://stglib.readthedocs.io/
-  dev_url: https://github.com/USGS-CMG/stglib
+  doc_url: https://cmgp.code-pages.usgs.gov/stglib/
+  dev_url: https://code.usgs.gov/cmgp/stglib
 
 extra:
   recipe-maintainers:
