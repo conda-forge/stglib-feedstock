@@ -1,4 +1,4 @@
-{% set version = "1.8.0" %}
+{% set version = "1.9.0" %}
 {% set python_min = "3.10" %}
 {% set python_max = "3.13" %}
 
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/USGS-CMG/stglib/archive/v{{ version }}.tar.gz
-  sha256: 00eb5d63f3a774e8aaa54e051bc29ca076f3b919908caf354974b4d3998566cc
+  sha256: c0886f4ef4e8be6896b3c78a2a7328cb60b674062f168229607e16312fcb7d6e
 
 build:
   noarch: python
